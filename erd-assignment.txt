@@ -1,0 +1,22 @@
+Entitiy:
+
+Musician => SSN, name, address, phone 
+Instrument => uniquesidentification number, name, musical key 
+Songs => Song identification number, title, author, track's duration
+Album => uniquesidentification number, title, copyright date, format e.g CD or DVD, album identifier
+
+
+Cardinality constraint
+
+musician -- many to many -- instrument
+album --- one to many --- songs
+song -- many to many -- musician
+musician -- one to many -- album
+
+RelationShip:
+
+musician -- can play -- instrument
+album --- has --- songs
+song -- composes -- musician
+
+musician -- produces -- album
